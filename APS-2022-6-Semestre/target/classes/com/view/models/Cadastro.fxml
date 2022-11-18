@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="parentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.view.controllers.CCadastro">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="55.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" percentHeight="37.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" percentHeight="27.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" percentHeight="35.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints percentHeight="5.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane>
+         <children>
+            <Label text="Unidade">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUnidade" layoutY="21.0" prefHeight="25.0" prefWidth="344.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="16.0" />
+            <Label layoutY="46.0" text="Produção Anual">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtProdAnual" layoutY="67.0" prefHeight="25.0" prefWidth="151.0" />
+            <Label layoutX="161.0" layoutY="47.0" text="Numero de Empregados">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNEmpregados" layoutX="158.0" layoutY="67.0" prefHeight="25.0" prefWidth="151.0" />
+            <Label layoutY="90.0" text="Destino da produção">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboDestino" layoutX="1.0" layoutY="111.0" prefWidth="150.0" />
+            <Label layoutX="158.0" layoutY="90.0" text="Nível de Automação">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNivelAuto" layoutX="158.0" layoutY="111.0" prefHeight="25.0" prefWidth="151.0" />
+            <Label layoutY="136.0" prefWidth="189.0" text="Qtd Máquinas e Implementos">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtQMaquinas" layoutX="1.0" layoutY="156.0" prefHeight="25.0" prefWidth="151.0" />
+            <Label layoutX="1.0" layoutY="187.0" text="Propriedade" />
+            <Line endX="84.0" endY="-1.0" layoutX="274.0" layoutY="204.0" startX="-274.0" startY="-1.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+         <children>
+            <Label layoutY="4.0" text="Incentivos fiscais recebidos">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtFiscaisRece" layoutY="25.0" prefHeight="25.0" prefWidth="151.0" />
+            <Label layoutX="-1.0" layoutY="50.0" text="Impostos municipais pagos">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtMuniPagos" layoutY="73.0" prefHeight="25.0" prefWidth="151.0" />
+            <Label layoutY="98.0" text="Impostos estaduais recolhidos">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEstaReco" layoutY="119.0" prefHeight="25.0" prefWidth="151.0" />
+            <Label layoutY="144.0" text="Impostos federais pagos">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtFedePagos" layoutY="165.0" prefHeight="25.0" prefWidth="151.0" />
+            <Label layoutX="184.0" layoutY="4.0" text="Taxas federais">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtTaxasFed" layoutX="179.0" layoutY="25.0" prefHeight="25.0" prefWidth="151.0" />
+            <Line endX="663.0" endY="11.0" layoutX="-305.0" layoutY="191.0" startX="305.0" startY="10.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowSpan="2147483647">
+         <children>
+            <Label layoutX="2.0" layoutY="4.0" text="Agrotóxico">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAgro" layoutY="25.0" prefHeight="25.0" prefWidth="285.0" />
+            <Button fx:id="btnRemover" layoutX="171.0" layoutY="63.0" mnemonicParsing="false" onAction="#actBtnRemover" text="Remover" />
+            <Button fx:id="btnAdicionar" layoutX="67.0" layoutY="63.0" mnemonicParsing="false" onAction="#actBtnAdicionar" text="Adicionar" />
+            <Line endX="-121.0" endY="-478.0" layoutX="121.0" layoutY="478.0" startX="-121.0" startY="92.0" strokeLineJoin="BEVEL" />
+            <TableView fx:id="listAgro" layoutX="11.0" layoutY="110.0" prefHeight="248.0" prefWidth="270.0">
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Button fx:id="btnPermitir" layoutX="67.0" layoutY="366.0" mnemonicParsing="false" onAction="#actBtnPermitir" text="Permitir" />
+            <Button fx:id="btnBani" layoutX="171.0" layoutY="366.0" mnemonicParsing="false" onAction="#actBtnBanir" text="Banir" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <Label layoutX="1.0" layoutY="4.0" text="Cidade">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCidade" layoutY="25.0" prefHeight="25.0" prefWidth="151.0" />
+            <Label layoutX="165.0" layoutY="4.0" text="CEP">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCep" layoutX="165.0" layoutY="25.0" prefHeight="25.0" prefWidth="146.0" />
+            <Label layoutY="50.0" text="Endereço">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEndereco" layoutY="71.0" prefHeight="25.0" prefWidth="292.0" />
+            <Label layoutX="1.0" layoutY="96.0" text="País">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPais" layoutX="1.0" layoutY="117.0" prefHeight="25.0" prefWidth="106.0" />
+            <Label layoutX="114.0" layoutY="96.0" text="Estado">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEstado" layoutX="114.0" layoutY="117.0" prefHeight="25.0" prefWidth="84.0" />
+            <Label layoutX="1.0" layoutY="142.0" text="Valores Fiscais" />
+            <Line endX="646.0" endY="-2.0" layoutX="-288.0" layoutY="161.0" startX="289.0" startY="-2.0" />
+         </children>
+      </AnchorPane>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" GridPane.columnSpan="2" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#actBtnCancelar" prefHeight="29.0" prefWidth="67.0" text="Cancelar" />
+            <Button fx:id="btnSalvar" mnemonicParsing="false" onAction="#actBtnSalvar" prefHeight="29.0" prefWidth="67.0" text="Salvar" />
+         </children>
+      </FlowPane>
+   </children>
+</GridPane>
