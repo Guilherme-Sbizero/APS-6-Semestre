@@ -2,7 +2,7 @@
 Aplicação de controle de acesso ao um banco de dados do Ministério do Meio Ambiente sobre agrotóxicos permitidos e banidos utilizando reconhecimentos biometricos desenvolvida em Java para trabalho acadêmico de Ciência da Computação no 6° semestre do curso na UNIP.
 
 ## O que é uma APS?
-=================
+
 APS, ou, Atividade Prática Supervisionada, é um exercício em grupo feito semestralmente pelos alunos da instituição de ensino UNIP. O tema, indiferente do curso que está sendo prestado, está sempre ligado a soluções sustentáveis ou ao meio ambiente.
 No caso do curso que eu presto, Ciência da computação, além do trabalho escrito, tem de ser entregue uma aplicação, cujo os requisitos são ditados pelo coordenador do curso.
 
@@ -19,4 +19,4 @@ Tools/Languages
 -----------
 - Java
 - OpenCV
--MAven
+- Maven
