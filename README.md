@@ -15,7 +15,7 @@ Como deverá funcionar?
 Deverá haver vários níveis de autenticação, nível 1, onde todos tem acesso, nível 2, começa a haver restrições para diretores de divisões e nível 3 que há apenas a digital do ministro do meio ambiente
 
 
-Tools/Languages
+Linguagens
 -----------
 - Java
 - OpenCV
