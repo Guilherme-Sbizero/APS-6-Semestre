@@ -20,11 +20,6 @@ Tela de Login
 
 ![image](https://user-images.githubusercontent.com/54387145/140671569-e2d5a464-0cbc-4008-bf7a-37aec31f6fc1.png)
 
-Interface cadastro de Acesso
-
-![image](https://user-images.githubusercontent.com/54387145/140671757-5dd99e65-3481-4210-ae53-022f19bd46ce.png)
-
-
 Linguagens
 -----------
 - Java
